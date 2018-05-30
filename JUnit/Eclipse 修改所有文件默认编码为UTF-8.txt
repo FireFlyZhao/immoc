@@ -1,0 +1,5 @@
+﻿https://blog.csdn.net/qq_24879495/article/details/78028180
+
+1、修改 workspace text file encoding
+
+依次点击windows -> Preferences -> general -> Workspace，修改如图的编码为UTF-8

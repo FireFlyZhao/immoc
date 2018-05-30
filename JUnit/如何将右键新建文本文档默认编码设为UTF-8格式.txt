@@ -1,0 +1,15 @@
+﻿如何将右键新建文本文档默认编码设为UTF-8格式
+https://blog.csdn.net/chenghuikai/article/details/50456159
+
+
+注：此方法只对右键新建的文本有作用，如果你是另存为，还是在存储界面选择编码方式
+
+此方法对于写代码的来说很是方便，一般写html，新建txt再改后缀，明明在页面设置了编码方式，可还是会显示乱码，这是因为txt在新建进默认是ANSI码，所以我们要做出修改，让文本在新建时就默认就是utf8的编码，这样是不是很方便呢。
+
+下面来看解决过程：
+
+1.在桌面新建个文本文档，不写入任何文本，然后另存为到C:\Windows\ShellNew目录，文件名存为template.txt，编码改为utf8，如下图
+
+2.打开注册表：打开HKEY_CLASSES_ROOT\.txt\ShellNew，新建寡字符串值FileName，双击些项，数值数据改为：C:\Windows\ShellNew\template.txt
+
+OK，现在已经完成了，以后再右键新建的文本文档字符编码默认就是utf-8的了！

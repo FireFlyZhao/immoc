@@ -1,0 +1,18 @@
+Librarie->>Web App Libraries
+hibernate3.jar->>org.hibernate->>/org/hibernate/hibernate-configuration-3.0.dtd
+得到
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+[不要configuration]
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+[要mapping]    
+	
+Librarie->>Web App Libraries
+struts2-core-2.3.24.jar->>/struts-default.xml
+得到
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
